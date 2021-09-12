@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Haul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+             <img src="images/logoo_prev_ui.png">
+            </div>
+            <div class="nav-links">
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Discount</a></li>
+                   <li><a href="#">Cart</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/fam.png" class="fam">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/af_prev_ui.png">
+                    <div>
+                        <h1>15th 2021 Sale</h1>
+                        <p> 
+                             Get Flat 74% OFF for today only.
+                    
+                        </p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/fk.png">
+                    <div>
+                        <h1>
+                             15th Sale
+                        </h1>
+                        <p>Get Rs. 100 Off on Orders Above Rs 1000<br>
+        
+                            Get Rs. 450 Off on Orders Above 3000 
+
+                        </p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/nx_prev_ui.png">
+                    <div>
+                        <h1>15th 2021 Sale. </h1>
+                   <p>Get Flat 43% OFF for today only.</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/mn.png">
+                    <div>
+                        <h1>15th 2021 sale</h1>
+                        <p>10% Off With Independence Day Sale Don't miss!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow_prev_ui.png" id="upbtn">
+            <h3>features</h3>
+            <img src="images/arrow_prev_ui.png" id="dbtn">
+        </div>
+    </div>
+
+<script>
+
+   var circle= document.getElementById("circle");
+   var upbtn = document.getElementById("upbtn");
+   var dbtn = document.getElementById("dbtn");
+
+var rotateValue = circle.style.transform;
+var rotateSum;
+
+upbtn.onclick=function(){
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+
+}
+dbtn.onclick=function(){
+    rotateSum = rotateValue + "rotate(90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
